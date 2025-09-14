@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        height: 450px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        display: flex;
+
+        justify-content: center;
+      }
+      .perfume {
+        width: 300px;
+        border-radius: 10px 0px 0px 10px;
+        display: flex;
+      }
+      .minic {
+        display: flex;
+        flex-direction: column;
+        font-size: 95%;
+        justify-content: center;
+        align-items: start;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 300px;
+      }
+      .price {
+        display: flex;
+        flex-direction: row;
+        margin-top: -20px;
+      }
+      .pricesec {
+        margin-left: 10px;
+        margin-top: 39px;
+        text-decoration: line-through;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .pricefir {
+        font-family: "Fraunces";
+        font-size: 30px;
+        color: hsl(158, 36%, 37%);
+      }
+      .cart {
+        background-color: hsl(158, 42%, 18%);
+        display: flex;
+        flex-direction: row;
+        height: 40px;
+        width: 120px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        margin-left: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: -15px;
+      }
+      .cart:hover {
+        background-color: black;
+      }
+      .button {
+        font-size: 90%;
+        border: none;
+        color: white;
+        margin-left: 10px;
+        font-family: "Montserrat";
+      }
+      .perfumew {
+        font-family: "Montserrat";
+        color: rgb(125, 124, 124);
+        width: 200px;
+      }
+      h1 {
+        font-family: "Fraunces";
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="perfume" src="images/image-product-desktop.jpg" />
+      <div class="minic">
+        <p class="perfumew">P E R F U M E</p>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p class="perfumew">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="price">
+          <p class="pricefir"><strong>$149.99</strong></p>
+          <p class="pricesec">$169.99</p>
+        </div>
+        <div class="cart">
+          <img class="cartpic" src="images/icon-cart.svg" />
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
